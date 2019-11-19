@@ -1,0 +1,9 @@
+nav{
+  background-color: chartreuse;
+  width: 110%;
+}
+.nav__link{
+  background-color: coral;
+  padding-left: 12.25%;
+  padding-right: 12.25%;
+}
