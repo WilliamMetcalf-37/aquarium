@@ -12,7 +12,7 @@ const initializeDetailButtonEvents = () => {
 
   // You will be writing code below this line
   document
-    .querySelector("#button--bitey")
+    .querySelector("#button--Bitey")
     .addEventListener("click", theClickEvent => {
       const theDialog = document.querySelector("#details--bitey");
       theDialog.showModal();

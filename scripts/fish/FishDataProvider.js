@@ -6,7 +6,7 @@
  */
 const fishCollection = [
   {
-      image: "goldie-fish.jpg",
+      image: "Bruce.jpeg",
       name: "Bart",
       species: "monkey",
       size: "5in",
@@ -14,7 +14,7 @@ const fishCollection = [
       food: ["algae", "crustaceans"]
   },
   {
-    image: "goldie-fish.jpg",
+    image: "Bruce.jpeg",
     name: "Bitey",
     species: "Piranha",
     size: "24in",
@@ -22,7 +22,7 @@ const fishCollection = [
     food: ["Humans"]
   },
   {
-    image: "goldie-fish.jpg",
+    image: "Bruce.jpeg",
     name: "Jawsie",
     species: "Shark",
     size: "264",
@@ -30,7 +30,7 @@ const fishCollection = [
     food: ["seals"]
   },
   {
-    image: "goldie-fish.jpg",
+    image: "Bruce.jpeg",
     name: "Dangler",
     species: "Angler Fish",
     size: "12in",
@@ -38,7 +38,7 @@ const fishCollection = [
     food: ["minnows"]
   },
   {
-    image: "goldie-fish.jpg",
+    image: "Bruce.jpeg",
     name: "Barry",
     species: "Barracuda",
     size: "70in",
@@ -46,7 +46,7 @@ const fishCollection = [
     food: ["salmon"]
   },
   {
-    image: "goldie-fish.jpg",
+    image: "Bruce.jpeg",
     name: "Snappy",
     species:"Red Snapper",
     size: "30in",
@@ -54,7 +54,7 @@ const fishCollection = [
     food: ["eels"]
   },
   {
-    image: "goldie-fish.jpg",
+    image: "Bruce.jpeg",
     name:"Mr. Bubbles",
     species: "Goldfish",
     size: "2in",
