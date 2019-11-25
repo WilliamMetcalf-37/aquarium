@@ -8,46 +8,19 @@ const initializeDetailButtonEvents = () => {
       dialogElement.close();
     });
   }
-  // CAN'T TOUCH THIS - END
+ // Get a reference to all buttons that start with "button--"
+ const allDetailButtons = document.querySelectorAll("button[id^='button--']")
 
-  // You will be writing code below this line
-  document
-    .querySelector("#button--Bitey")
-    .addEventListener("click", theClickEvent => {
-      const theDialog = document.querySelector("#details--bitey");
-      theDialog.showModal();
-    });
-  document
-    .querySelector("#button--jawsie")
-    .addEventListener("click", theClickEvent => {
-      const theDialog = document.querySelector("#details--jawsie");
-      theDialog.showModal();
-    });
-    document
-    .querySelector("#button--dangler")
-    .addEventListener("click", theClickEvent => {
-      const theDialog = document.querySelector("#details--dangler");
-      theDialog.showModal();
-    });
-    document
-    .querySelector("#button--barry")
-    .addEventListener("click", theClickEvent => {
-      const theDialog = document.querySelector("#details--barry");
-      theDialog.showModal();
-    });
-    document
-    .querySelector("#button--snappy")
-    .addEventListener("click", theClickEvent => {
-      const theDialog = document.querySelector("#details--snappy");
-      theDialog.showModal();
-    });
-    document
-    .querySelector("#button--mrbubbles")
-    .addEventListener("click", theClickEvent => {
-      const theDialog = document.querySelector("#details--mrbubbles");
-      theDialog.showModal();
-    });
-
-
+ // Add an event listener to each one
+ for (const btn of allDetailButtons) {
+     btn.addEventListener(
+         "click",
+         theEvent => {
+             const dialogSiblingSelector = `#${theEvent.target.id}+dialog`
+             const theDialog = document.querySelector(dialogSiblingSelector)
+             theDialog.showModal()
+         }
+     )
+ }
 };
 export default initializeDetailButtonEvents;

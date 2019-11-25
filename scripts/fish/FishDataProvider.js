@@ -55,7 +55,7 @@ const fishCollection = [
   },
   {
     image: "Bruce.jpeg",
-    name:"Mr. Bubbles",
+    name:"Bubbles",
     species: "Goldfish",
     size: "2in",
     location: "Pets Mart",
