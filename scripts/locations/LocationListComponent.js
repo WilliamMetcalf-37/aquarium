@@ -7,18 +7,20 @@ const locationListComponent = () => {
 const contentElement = document.querySelector(".locationCard")
 const locations = useLocation()
 
-let allLocationsHTML = ""
+// let allLocationsHTML = ""
 
-for (const location of locations) {
-  const locationHTML = locationComponent(location)
-  allLocationsHTML += locationHTML
+// for (const location of locations) {
+//   const locationHTML = locationComponent(location)
+//   allLocationsHTML += locationHTML
 
-}
+// }
 
 contentElement.innerHTML += 
 `
 <section class = "locationCard"> 
-${allLocationsHTML}
+${
+  locations.map(location => locationComponent(location) ).join("")
+}
 </section>
 `
 }

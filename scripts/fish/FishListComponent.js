@@ -13,18 +13,23 @@ const FishListComponent = () => {
   const contentElement = document.querySelector(".fishlist")
   const fishes = useFish()
   
-  let allFishHTML = ""
+  // let allFishHTML = ""
 
-  for (const fish of fishes){
+  // for (const fish of fishes){
     
-    const fishHTML = FishComponent(fish)
-    allFishHTML += fishHTML
+  //   const fishHTML = FishComponent(fish)
+  //   allFishHTML += fishHTML
     
-  }
+  // }
   // Add to the existing HTML in the content element
   contentElement.innerHTML += `
       <section class="fishList">
-          ${allFishHTML}
+          ${fishes.map(
+            (currentFish) => { 
+             return FishComponent(currentFish)
+            }
+          ).join("")
+          }
       </section>
   `
 }

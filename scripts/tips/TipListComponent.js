@@ -10,18 +10,18 @@ const TipListComponent = () => {
   const contentElement = document.querySelector(".tipList")
   const tips = useTip()
   
-  let allTipHTML = ""
+  // let allTipHTML = ""
 
-  for (const tip of tips){
+  // for (const tip of tips){
     
-    const tipHTML = TipComponent(tip)
-    allTipHTML += tipHTML
+  //   const tipHTML = TipComponent(tip)
+  //   allTipHTML += tipHTML
 
-  }
+  // }
   // Add to the existing HTML in the content element
   contentElement.innerHTML += `
       <section class="tipList">
-          ${allTipHTML}
+          ${tips.map(tip => TipComponent(tip)).join("")}
       </section>
   `
 }
